@@ -34,10 +34,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    transform: translateY(-2px);
+    background-color: #2563EB;
+    border-color: #2563EB;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
 }
+
 
 .btn-secondary {
     background-color: var(--secondary-color);
@@ -49,6 +52,47 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--tertiary-color);
     color: #000;
 }
+
+.btn-tertiary:hover {
+    background-color: #e5c337;
+    border-color: #e5c337;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 217, 61, 0.4);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+.btn-nav {
+    min-width: 100px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+[data-bs-theme="dark"] .btn-outline-primary.btn-nav {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #000; /* High contrast text for light blue */
+}
+
+[data-bs-theme="dark"] .btn-outline-primary.btn-nav:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+
 
 .btn-circle {
     width: 40px;
@@ -96,13 +140,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero-section {
-    padding: 100px 0;
-    min-height: 80vh;
+    padding: 140px 0 100px;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
+
+.hero-home-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-home-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 .hero-title {
     font-size: 3.5rem;
@@ -149,6 +210,80 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem;
 }
 
+.custom-card {
+    background: var(--bs-body-bg);
+    border-radius: 20px;
+    padding: 2.5rem;
+    height: 100%;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card-img-custom {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 4px solid var(--bs-body-bg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.custom-card:hover .card-img-custom {
+    transform: scale(1.1);
+    border-color: var(--primary-color);
+}
+.category-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+    background: var(--bs-body-bg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.category-img-wrapper {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+.category-card .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.category-card .card-text {
+    flex-grow: 1;
+}
 
 /* Footer */
 footer {

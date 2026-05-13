@@ -29,14 +29,16 @@
                 </a>
                 
                 <div class="d-flex align-items-center order-lg-last ms-2">
-                    <button id="themeToggle" class="btn btn-circle me-2" aria-label="Toggle theme">
-                        <i class="bi bi-moon-stars-fill"></i>
-                    </button>
-                    <button id="rtlToggle" class="btn btn-circle me-2" aria-label="Toggle RTL">
-                        <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
-                    </button>
-                    <a href="login.html" class="btn btn-outline-primary d-none d-sm-inline-block me-2">Login</a>
-                    <a href="register.html" class="btn btn-primary d-none d-sm-inline-block">Sign Up</a>
+                    <div class="d-none d-lg-flex align-items-center">
+                        <button class="btn btn-circle me-2 theme-toggle" aria-label="Toggle theme">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                        <button class="btn btn-circle me-2 rtl-toggle" aria-label="Toggle RTL">
+                            <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
+                        </button>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-primary btn-nav d-none d-sm-inline-block me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-nav d-none d-sm-inline-block">Sign Up</a>
                     <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -48,6 +50,15 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
+                        <div class="d-flex d-lg-none align-items-center mb-4 pb-3 border-bottom">
+                            <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
+                                <i class="bi bi-moon-stars-fill"></i>
+                            </button>
+                            <span class="me-auto">Switch Theme</span>
+                            <button class="btn btn-circle rtl-toggle" aria-label="Toggle RTL">
+                                <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
+                            </button>
+                        </div>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
                             <li class="nav-item"><a class="nav-link active" href="home-2.html">Home 2</a></li>
@@ -58,8 +69,8 @@
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                         <div class="d-sm-none mt-3">
-                            <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
-                            <a href="register.html" class="btn btn-primary w-100">Sign Up</a>
+                            <a href="login.html" class="btn btn-outline-primary btn-nav w-100 mb-2">Login</a>
+                            <a href="register.html" class="btn btn-primary btn-nav w-100">Sign Up</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +80,7 @@
 
     <main>
         <!-- Hero Section (Centered) -->
-        <section class="hero-section text-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center; color: white;">
+        <section class="hero-section hero-home-2 text-center">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -89,28 +100,22 @@
             <div class="container">
                 <div class="row g-4 text-center">
                     <div class="col-md-4">
-                        <div class="p-4 bg-white rounded-4 shadow-sm h-100 dark-card">
-                            <div class="bg-primary-subtle d-inline-flex p-3 rounded-circle mb-3">
-                                <i class="bi bi-briefcase text-primary fs-3"></i>
-                            </div>
+                        <div class="custom-card">
+                            <img src="https://images.unsplash.com/photo-1505232458567-cc264a631f47?auto=format&fit=crop&q=80&w=400" alt="Corporate" class="card-img-custom">
                             <h5>Corporate Events</h5>
                             <p class="text-muted">Team building courses and massive interactives designed for corporate crowds.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="p-4 bg-white rounded-4 shadow-sm h-100 dark-card">
-                            <div class="bg-secondary-subtle d-inline-flex p-3 rounded-circle mb-3">
-                                <i class="bi bi-water text-secondary fs-3"></i>
-                            </div>
+                        <div class="custom-card">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=400" alt="Water Parks" class="card-img-custom">
                             <h5>Water Parks</h5>
                             <p class="text-muted">Turn any field into a water park with our 40ft high dual-lane slides.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="p-4 bg-white rounded-4 shadow-sm h-100 dark-card">
-                            <div class="bg-tertiary-subtle d-inline-flex p-3 rounded-circle mb-3">
-                                <i class="bi bi-megaphone text-dark fs-3"></i>
-                            </div>
+                        <div class="custom-card">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=400" alt="School Fairs" class="card-img-custom">
                             <h5>School Fairs</h5>
                             <p class="text-muted">Full-service school fundraiser packages with safe, age-appropriate units.</p>
                         </div>

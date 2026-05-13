@@ -27,19 +27,33 @@
                     <span>JumpJoy</span>
                 </a>
                 <div class="d-flex align-items-center order-lg-last ms-2">
-                    <button id="themeToggle" class="btn btn-circle me-2" aria-label="Toggle theme">
-                        <i class="bi bi-moon-stars-fill"></i>
-                    </button>
-                    <button id="rtlToggle" class="btn btn-circle me-2" aria-label="Toggle RTL">
-                        <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
-                    </button>
-                    <a href="login.html" class="btn btn-outline-primary d-none d-sm-inline-block me-2">Login</a>
-                    <a href="register.html" class="btn btn-primary d-none d-sm-inline-block">Sign Up</a>
+                    <div class="d-none d-lg-flex align-items-center">
+                        <button class="btn btn-circle me-2 theme-toggle" aria-label="Toggle theme">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                        <button class="btn btn-circle me-2 rtl-toggle" aria-label="Toggle RTL">
+                            <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
+                        </button>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-primary btn-nav d-none d-sm-inline-block me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-nav d-none d-sm-inline-block">Sign Up</a>
                     <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
                 </div>
                 <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
-                    <div class="offcanvas-header border-bottom"><h5 class="offcanvas-title">Menu</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></div>
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
                     <div class="offcanvas-body">
+                        <div class="d-flex d-lg-none align-items-center mb-4 pb-3 border-bottom">
+                            <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
+                                <i class="bi bi-moon-stars-fill"></i>
+                            </button>
+                            <span class="me-auto">Switch Theme</span>
+                            <button class="btn btn-circle rtl-toggle" aria-label="Toggle RTL">
+                                <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
+                            </button>
+                        </div>
                         <ul class="navbar-nav justify-content-center flex-grow-1">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
                             <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
@@ -49,6 +63,10 @@
                             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                             <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                         </ul>
+                        <div class="d-sm-none mt-3">
+                            <a href="login.html" class="btn btn-outline-primary btn-nav w-100 mb-2">Login</a>
+                            <a href="register.html" class="btn btn-primary btn-nav w-100">Sign Up</a>
+                        </div>
                     </div>
                 </div>
             </div>

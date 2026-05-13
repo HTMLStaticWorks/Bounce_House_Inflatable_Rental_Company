@@ -1,39 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggle
-    const themeToggle = document.getElementById('themeToggle');
+    const themeToggles = document.querySelectorAll('.theme-toggle');
     const htmlElement = document.documentElement;
-    const icon = themeToggle.querySelector('i');
 
     const savedTheme = localStorage.getItem('theme') || 'light';
     htmlElement.setAttribute('data-bs-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    updateThemeIcons(savedTheme);
 
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-bs-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        htmlElement.setAttribute('data-bs-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
+    themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            htmlElement.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcons(newTheme);
+        });
     });
 
-    function updateThemeIcon(theme) {
-        if (theme === 'dark') {
-            icon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
-        } else {
-            icon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
-        }
+    function updateThemeIcons(theme) {
+        themeToggles.forEach(toggle => {
+            const icon = toggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+            } else {
+                icon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+            }
+        });
     }
 
     // RTL Toggle
-    const rtlToggle = document.getElementById('rtlToggle');
+    const rtlToggles = document.querySelectorAll('.rtl-toggle');
     const savedRtl = localStorage.getItem('rtl') === 'true';
     
     if (savedRtl) {
         htmlElement.setAttribute('dir', 'rtl');
     }
 
-    if (rtlToggle) {
-        rtlToggle.addEventListener('click', () => {
+    rtlToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
             const isRtl = htmlElement.getAttribute('dir') === 'rtl';
             if (isRtl) {
                 htmlElement.removeAttribute('dir');
@@ -43,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('rtl', 'true');
             }
         });
-    }
+    });
 
 
     // Navbar Scroll Effect
