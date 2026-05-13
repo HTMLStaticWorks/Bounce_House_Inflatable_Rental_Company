@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details | JumpJoy Rentals</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                    <span>JumpJoy</span>
+                </a>
+                <div class="d-flex align-items-center order-lg-last ms-2">
+                    <button id="themeToggle" class="btn btn-circle me-2" aria-label="Toggle theme">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                    <button id="rtlToggle" class="btn btn-circle me-2" aria-label="Toggle RTL">
+                        <i class="bi bi-translate"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary d-none d-sm-inline-block me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary d-none d-sm-inline-block">Sign Up</a>
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+                </div>
+                <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+                    <div class="offcanvas-header border-bottom"><h5 class="offcanvas-title">Menu</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-5 pt-5">
+        <section class="section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <article>
+                            <nav aria-label="breadcrumb" class="mb-4">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home 1</a></li>
+                                    <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                                    <li class="breadcrumb-item active">Safety Tips</li>
+                                </ol>
+                            </nav>
+                            
+                            <img src="https://images.unsplash.com/photo-1472162072142-d5af07aee23a?auto=format&fit=crop&q=80&w=1200" class="img-fluid rounded-4 mb-5 shadow-sm w-100" style="max-height: 500px; object-fit: cover;" alt="Blog Detail">
+                            
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h1 class="fw-bold mb-4">5 Safety Tips for Backyard Parties</h1>
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="40" alt="Author">
+                                        <div>
+                                            <h6 class="mb-0">Alex Johnson</h6>
+                                            <small class="text-muted">May 10, 2026 • 5 min read</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="lead">Planning a backyard party with a bounce house is one of the best ways to keep children entertained. However, safety should always be your top priority.</p>
+                                    
+                                    <p>Here are five essential safety tips every parent and event organizer should know before the inflatables arrive:</p>
+                                    
+                                    <h4 class="fw-bold mt-4">1. Constant Adult Supervision</h4>
+                                    <p>Never leave the children unattended. A responsible adult should always be watching the entrance and exit of the bounce house to prevent horseplay and overcrowding.</p>
+                                    
+                                    <h4 class="fw-bold mt-4">2. Separate by Size</h4>
+                                    <p>Try to group children of similar age and size together. Larger kids can accidentally bump into smaller ones, leading to potential injuries. If you have a wide range of ages, consider setting a schedule for different groups.</p>
+                                    
+                                    <h4 class="fw-bold mt-4">3. Remove Jewelry and Sharp Objects</h4>
+                                    <p>Ensure all children remove shoes, glasses, jewelry, and any sharp objects from their pockets. Not only does this protect the children, but it also prevents punctures to the inflatable.</p>
+                                    
+                                    <h4 class="fw-bold mt-4">4. Watch the Weather</h4>
+                                    <p>Inflatables should not be used in high winds (typically over 15-20 mph) or during thunderstorms. If the weather turns, immediately have everyone exit and deflate the unit.</p>
+                                    
+                                    <h4 class="fw-bold mt-4">5. Set Ground Rules</h4>
+                                    <p>Before the fun begins, explain basic rules: no flipping, no wrestling, and no climbing on the walls or mesh windows. Clear rules help prevent accidents before they happen.</p>
+                                    
+                                    <div class="bg-body-tertiary p-4 rounded-4 my-5">
+                                        <h5 class="fw-bold mb-3">Share this post:</h5>
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="btn btn-outline-secondary btn-sm"><i class="bi bi-facebook me-1"></i> Facebook</a>
+                                            <a href="#" class="btn btn-outline-secondary btn-sm"><i class="bi bi-twitter-x me-1"></i> Twitter</a>
+                                            <a href="#" class="btn btn-outline-secondary btn-sm"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4">
+                                    <div class="card border-0 shadow-sm p-4 sticky-top" style="top: 100px;">
+                                        <h5 class="fw-bold mb-4">Related Posts</h5>
+                                        <div class="mb-4">
+                                            <a href="#" class="text-decoration-none text-dark d-flex mb-3">
+                                                <img src="https://images.unsplash.com/photo-1533749047139-189de3cf06d3?auto=format&fit=crop&q=80&w=80" class="rounded me-3" alt="Thumb">
+                                                <h6 class="small fw-bold mb-0">How to Choose the Right Bounce House</h6>
+                                            </a>
+                                            <a href="#" class="text-decoration-none text-dark d-flex mb-3">
+                                                <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=80" class="rounded me-3" alt="Thumb">
+                                                <h6 class="small fw-bold mb-0">Top 10 Party Themes for 2026</h6>
+                                            </a>
+                                        </div>
+                                        <hr>
+                                        <h5 class="fw-bold mb-3">Tags</h5>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-dark border">Safety</span>
+                                            <span class="badge bg-light text-dark border">Planning</span>
+                                            <span class="badge bg-light text-dark border">Kids</span>
+                                            <span class="badge bg-light text-dark border">Parties</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-3 text-white" href="#">
+                        <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                        <span>JumpJoy</span>
+                    </a>
+                    <p class="text-secondary small">Your number one choice for safe, clean, and professional inflatable rentals.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-4">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-4">Support</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Waiver</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white mb-4">Newsletter</h6>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control form-control-sm bg-transparent border-secondary text-white" placeholder="Email">
+                        <button class="btn btn-primary btn-sm">Join</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <p class="text-center text-secondary small">&copy; 2026 JumpJoy Rentals.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

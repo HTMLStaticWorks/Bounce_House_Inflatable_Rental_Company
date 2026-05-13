@@ -1,0 +1,221 @@
+/* Global Styles */
+:root {
+    --primary-color: #3B82F6;
+    --secondary-color: #FF6B6B;
+    --tertiary-color: #FFD93D;
+    --dark-bg: #1a1a2e;
+    --light-bg: #f8f9fa;
+    --transition: all 0.3s ease-in-out;
+}
+
+[data-bs-theme="dark"] {
+    --primary-color: #60a5fa;
+    --secondary-color: #ff8787;
+    --tertiary-color: #ffe066;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-tertiary {
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+    color: #000;
+}
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="dark"] .btn-circle {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.btn-circle:hover {
+    background-color: rgba(0,0,0,0.05);
+    transform: rotate(15deg);
+}
+
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="dark"] .navbar.scrolled {
+    background: rgba(26, 26, 46, 0.95);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: var(--transition);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.stat-card {
+    border: 2px solid rgba(0,0,0,0.05);
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+    transition: var(--transition);
+    background: var(--bs-body-bg);
+}
+
+.stat-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.1);
+}
+
+.stat-card h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: #fff;
+    padding: 80px 0 20px;
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--tertiary-color);
+}
+
+/* Back to Top */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Custom Utilities */
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary-color) !important;
+}
+
+/* Dashboard Sidebar */
+.sidebar {
+    min-height: 100vh;
+    background: var(--dark-bg);
+    color: #fff;
+}
+
+.sidebar .nav-link {
+    color: #adb5bd;
+    padding: 15px 20px;
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+
+/* RTL Support */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}

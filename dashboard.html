@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | JumpJoy Admin</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            background-color: var(--bs-body-bg);
+        }
+        .sidebar {
+            width: 280px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .main-content {
+            margin-left: 280px;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        @media (max-width: 991.98px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+            .sidebar.show {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+        .stat-card {
+            border-left: 4px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar bg-dark text-white p-3">
+        <div class="d-flex align-items-center mb-5 px-3">
+            <i class="bi bi-rocket-takeoff-fill me-2 fs-3 text-primary"></i>
+            <h4 class="mb-0 fw-bold">JumpJoy</h4>
+        </div>
+        
+        <nav class="nav flex-column gap-2">
+            <a class="nav-link active text-white rounded-3" href="#analytics">
+                <i class="bi bi-speedometer2 me-2"></i> Analytics
+            </a>
+            <a class="nav-link text-white-50 rounded-3" href="#users">
+                <i class="bi bi-people me-2"></i> Users
+            </a>
+            <a class="nav-link text-white-50 rounded-3" href="#orders">
+                <i class="bi bi-cart me-2"></i> Orders
+            </a>
+            <a class="nav-link text-white-50 rounded-3" href="#messages">
+                <i class="bi bi-chat-dots me-2"></i> Messages
+            </a>
+            <hr class="border-secondary my-4">
+            <a class="nav-link text-white-50 rounded-3" href="index.html">
+                <i class="bi bi-house me-2"></i> View Website
+            </a>
+            <a class="nav-link text-danger rounded-3" href="login.html">
+                <i class="bi bi-box-arrow-left me-2"></i> Logout
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Nav (Mobile) -->
+        <header class="d-flex d-lg-none align-items-center justify-content-between mb-4">
+            <button id="sidebarToggle" class="btn btn-outline-secondary">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-rocket-takeoff-fill me-2 text-primary"></i>
+                <h5 class="mb-0">JumpJoy</h5>
+            </div>
+            <div style="width: 40px;"></div>
+        </header>
+
+        <!-- Page Header -->
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <div>
+                <h2 class="fw-bold mb-1">Admin Dashboard</h2>
+                <p class="text-muted mb-0">Overview of your rental business</p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <button id="themeToggle" class="btn btn-outline-secondary rounded-circle p-2">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </button>
+                <div class="dropdown">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle cursor-pointer" width="45" alt="User" data-bs-toggle="dropdown">
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analytics Section -->
+        <section id="analytics" class="dashboard-section">
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <div class="card stat-card border-0 shadow-sm p-4 h-100">
+                        <small class="text-muted fw-bold mb-2 d-block">TOTAL REVENUE</small>
+                        <h3 class="fw-bold mb-0">$12,450</h3>
+                        <span class="text-success small fw-bold"><i class="bi bi-arrow-up"></i> 15% from last month</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stat-card border-0 shadow-sm p-4 h-100" style="border-left-color: var(--secondary-color) !important;">
+                        <small class="text-muted fw-bold mb-2 d-block">ACTIVE ORDERS</small>
+                        <h3 class="fw-bold mb-0">24</h3>
+                        <span class="text-primary small fw-bold">8 scheduled today</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stat-card border-0 shadow-sm p-4 h-100" style="border-left-color: var(--tertiary-color) !important;">
+                        <small class="text-muted fw-bold mb-2 d-block">NEW USERS</small>
+                        <h3 class="fw-bold mb-0">156</h3>
+                        <span class="text-success small fw-bold"><i class="bi bi-arrow-up"></i> 5% this week</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stat-card border-0 shadow-sm p-4 h-100" style="border-left-color: #6c757d !important;">
+                        <small class="text-muted fw-bold mb-2 d-block">MESSAGES</small>
+                        <h3 class="fw-bold mb-0">12</h3>
+                        <span class="text-warning small fw-bold">3 unread</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm p-4 mb-5">
+                <h5 class="fw-bold mb-4">Rental Trends</h5>
+                <div style="height: 300px; display: flex; align-items: flex-end; gap: 15px; padding-bottom: 20px;">
+                    <!-- Simple CSS Chart Mockup -->
+                    <div style="flex: 1; height: 40%; background: var(--primary-color); border-radius: 5px;" title="Mon"></div>
+                    <div style="flex: 1; height: 60%; background: var(--primary-color); border-radius: 5px;" title="Tue"></div>
+                    <div style="flex: 1; height: 35%; background: var(--primary-color); border-radius: 5px;" title="Wed"></div>
+                    <div style="flex: 1; height: 80%; background: var(--primary-color); border-radius: 5px;" title="Thu"></div>
+                    <div style="flex: 1; height: 95%; background: var(--secondary-color); border-radius: 5px;" title="Fri"></div>
+                    <div style="flex: 1; height: 100%; background: var(--secondary-color); border-radius: 5px;" title="Sat"></div>
+                    <div style="flex: 1; height: 70%; background: var(--primary-color); border-radius: 5px;" title="Sun"></div>
+                </div>
+                <div class="d-flex justify-content-between text-muted small mt-2">
+                    <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Users Section (Mockup) -->
+        <section id="users" class="dashboard-section d-none">
+            <div class="card border-0 shadow-sm p-4">
+                <h5 class="fw-bold mb-4">Registered Customers</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Join Date</th>
+                                <th>Rentals</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/women/1.jpg" class="rounded-circle me-2" width="30"> Sarah Jenkins</td>
+                                <td>sarah@example.com</td>
+                                <td>Jan 12, 2026</td>
+                                <td>3</td>
+                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle me-2" width="30"> Mike Thompson</td>
+                                <td>mike@example.com</td>
+                                <td>Feb 05, 2026</td>
+                                <td>1</td>
+                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Orders Section (Mockup) -->
+        <section id="orders" class="dashboard-section d-none">
+            <div class="card border-0 shadow-sm p-4">
+                <h5 class="fw-bold mb-4">Recent Orders</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Inflatable</th>
+                                <th>Date</th>
+                                <th>Customer</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-8821</td>
+                                <td>Tropical Castle</td>
+                                <td>May 15, 2026</td>
+                                <td>John Doe</td>
+                                <td>$150.00</td>
+                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-8820</td>
+                                <td>Blue Wave Slide</td>
+                                <td>May 14, 2026</td>
+                                <td>Jane Smith</td>
+                                <td>$250.00</td>
+                                <td><span class="badge bg-success-subtle text-success">Confirmed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Messages Section (Mockup) -->
+        <section id="messages" class="dashboard-section d-none">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action active p-3">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1">Emily Rivera</h6>
+                                    <small>2h ago</small>
+                                </div>
+                                <p class="mb-1 small">Question about rain checks...</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action p-3">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1">Robert Brown</h6>
+                                    <small>1d ago</small>
+                                </div>
+                                <p class="mb-1 small">Delivery to Sector 4?</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Emily Rivera</h6>
+                                <small class="text-muted">Teacher at City High</small>
+                            </div>
+                        </div>
+                        <div class="bg-light p-3 rounded-4 mb-3">
+                            <p class="mb-0 small">Hi there! We are planning a school event for next month. What happens if it rains on the day of the rental? Do you provide rain checks or refunds?</p>
+                        </div>
+                        <div class="mt-auto">
+                            <textarea class="form-control mb-2" rows="3" placeholder="Type your reply..."></textarea>
+                            <button class="btn btn-primary">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
