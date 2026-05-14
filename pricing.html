@@ -74,69 +74,183 @@
     </header>
 
     <main class="mt-5 pt-5">
-        <section class="py-5 bg-tertiary text-dark text-center">
-            <div class="container">
-                <h1 class="fw-bold">Simple & Transparent Pricing</h1>
-                <p class="lead">No hidden fees. Every plan includes setup and teardown.</p>
+        <!-- Pricing Hero -->
+        <section class="pricing-hero position-relative d-flex align-items-center justify-content-center text-center text-white">
+            <div class="pricing-hero-overlay"></div>
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <span class="badge bg-primary text-white px-3 py-2 rounded-pill mb-3">Clear Rates</span>
+                        <h1 class="display-3 fw-bold mb-3">Simple & Transparent Pricing</h1>
+                        <p class="lead mb-0 text-white">No hidden fees. Every plan includes professional setup, safety inspection, and teardown.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Pricing Plans Section -->
+        <section class="section-padding pt-5">
+            <div class="container pt-5">
+                <div class="row g-4 justify-content-center align-items-stretch">
+                    <!-- Basic Plan -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm p-4 text-center custom-card mt-5">
+                            <div class="mb-4">
+                                <span class="text-uppercase fw-bold text-muted small" style="letter-spacing: 1px;">Backyard Bash</span>
+                                <h3 class="fw-bold mt-2">Basic Party</h3>
+                                <div class="py-3">
+                                    <span class="display-4 fw-bold text-dark">$150</span>
+                                    <span class="text-muted d-block small">Per Event</span>
+                                </div>
+                            </div>
+                            <hr class="my-4 opacity-10">
+                            <ul class="list-unstyled mb-5 text-start flex-grow-1">
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Standard Bounce House</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 8-Hour Rental Period</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Free Setup & Teardown</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Sanitized Unit</li>
+                                <li class="mb-3 d-flex align-items-center text-muted opacity-50"><i class="bi bi-x-circle fs-5 me-2"></i> Concession Machine</li>
+                                <li class="mb-3 d-flex align-items-center text-muted opacity-50"><i class="bi bi-x-circle fs-5 me-2"></i> Attendant Provided</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary btn-lg w-100 py-3 rounded-3">Select Plan</a>
+                        </div>
+                    </div>
+
+                    <!-- Deluxe Plan (Featured) -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-primary border-2 shadow-lg p-4 text-center custom-card position-relative bg-white mt-5" style="overflow: visible;">
+                            <div class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-4 py-2 shadow-sm" style="z-index: 999; margin-top: -5px;">MOST POPULAR</div>
+                            <div class="mb-4">
+                                <span class="text-uppercase fw-bold text-primary small" style="letter-spacing: 1px;">Best Value</span>
+                                <h3 class="fw-bold mt-2">Deluxe Fun</h3>
+                                <div class="py-3">
+                                    <span class="display-4 fw-bold text-dark">$275</span>
+                                    <span class="text-muted d-block small">Per Event</span>
+                                </div>
+                            </div>
+                            <hr class="my-4 opacity-10">
+                            <ul class="list-unstyled mb-5 text-start flex-grow-1">
+                                <li class="mb-3 d-flex align-items-center fw-bold text-dark"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Combo Unit (Bounce + Slide)</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 8-Hour Rental Period</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Concession Machine</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Free Setup & Teardown</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Priority Delivery</li>
+                                <li class="mb-3 d-flex align-items-center text-muted opacity-50"><i class="bi bi-x-circle fs-5 me-2"></i> Attendant Provided</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary btn-lg w-100 py-3 rounded-3 shadow">Get Started Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Mega Plan -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm p-4 text-center custom-card mt-5">
+                            <div class="mb-4">
+                                <span class="text-uppercase fw-bold text-muted small" style="letter-spacing: 1px;">Large Events</span>
+                                <h3 class="fw-bold mt-2">Mega Event</h3>
+                                <div class="py-3">
+                                    <span class="display-4 fw-bold text-dark">$550</span>
+                                    <span class="text-muted d-block small">Per Event</span>
+                                </div>
+                            </div>
+                            <hr class="my-4 opacity-10">
+                            <ul class="list-unstyled mb-5 text-start flex-grow-1">
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Giant Obstacle Course</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Interactive Game</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 2 Concession Machines</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Staff Attendant</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Free Setup & Teardown</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Planning Support</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary btn-lg w-100 py-3 rounded-3">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Party Add-ons -->
+        <section class="section-padding bg-body-tertiary">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Make it a Complete Party</h2>
+                    <p class="text-muted">Add these extras to any rental package for maximum fun.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="custom-card border-0">
+                            <img src="https://images.unsplash.com/photo-1621619856624-42fd193a0661?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Popcorn">
+                            <h6 class="fw-bold">Popcorn Machine</h6>
+                            <p class="small text-muted mb-2">Includes 50 servings</p>
+                            <span class="text-primary fw-bold">$65/Day</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="custom-card border-0">
+                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Tables">
+                            <h6 class="fw-bold">Tables & Chairs</h6>
+                            <p class="small text-muted mb-2">Set of 2 tables + 12 chairs</p>
+                            <span class="text-primary fw-bold">$40/Day</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="custom-card border-0">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Generator">
+                            <h6 class="fw-bold">Power Generator</h6>
+                            <p class="small text-muted mb-2">For parks without power</p>
+                            <span class="text-primary fw-bold">$80/Day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Process -->
         <section class="section-padding">
             <div class="container">
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                            <div class="mb-4">
-                                <h5 class="text-muted fw-bold">Basic Party</h5>
-                                <h2 class="fw-bold display-5 mb-0">$150</h2>
-                                <p class="text-muted">Per Event</p>
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">How It Works</h2>
+                    <p class="text-muted">Reserving your fun is as easy as 1-2-3-4.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="custom-card border shadow-sm">
+                            <div class="position-relative mb-4">
+                                <img src="https://images.unsplash.com/photo-1533749047139-189de3cf06d3?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 1">
+                                <span class="position-absolute top-0 start-50 translate-middle badge rounded-circle bg-primary d-flex align-items-center justify-content-center shadow" style="width: 35px; height: 35px; border: 3px solid white;">1</span>
                             </div>
-                            <ul class="list-unstyled mb-5 text-start">
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 1 Standard Bounce House</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 8-Hour Rental Period</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Free Setup & Teardown</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Sanitized Unit</li>
-                                <li class="mb-3 text-muted"><i class="bi bi-x text-danger me-2"></i> Concession Machine</li>
-                                <li class="mb-3 text-muted"><i class="bi bi-x text-danger me-2"></i> Attendant Provided</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-outline-primary w-100 py-3">Select Plan</a>
+                            <h5 class="fw-bold">Choose Units</h5>
+                            <p class="small text-muted mb-0">Browse our massive collection and pick your favorites for the big day.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card h-100 border-primary shadow p-4 text-center position-relative">
-                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2">Most Popular</span>
-                            <div class="mb-4">
-                                <h5 class="text-primary fw-bold">Deluxe Fun</h5>
-                                <h2 class="fw-bold display-5 mb-0">$275</h2>
-                                <p class="text-muted">Per Event</p>
+                    <div class="col-md-3">
+                        <div class="custom-card border shadow-sm">
+                            <div class="position-relative mb-4">
+                                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 2">
+                                <span class="position-absolute top-0 start-50 translate-middle badge rounded-circle bg-primary d-flex align-items-center justify-content-center shadow" style="width: 35px; height: 35px; border: 3px solid white;">2</span>
                             </div>
-                            <ul class="list-unstyled mb-5 text-start">
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 1 Combo Unit (Bounce + Slide)</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 8-Hour Rental Period</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 1 Concession Machine</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Free Setup & Teardown</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Priority Delivery</li>
-                                <li class="mb-3 text-muted"><i class="bi bi-x text-danger me-2"></i> Attendant Provided</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary w-100 py-3 shadow">Select Plan</a>
+                            <h5 class="fw-bold">Book Online</h5>
+                            <p class="small text-muted mb-0">Select your date, sign the waiver, and secure your spot with a few clicks.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                            <div class="mb-4">
-                                <h5 class="text-muted fw-bold">Mega Event</h5>
-                                <h2 class="fw-bold display-5 mb-0">$550</h2>
-                                <p class="text-muted">Per Event</p>
+                    <div class="col-md-3">
+                        <div class="custom-card border shadow-sm">
+                            <div class="position-relative mb-4">
+                                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 3">
+                                <span class="position-absolute top-0 start-50 translate-middle badge rounded-circle bg-primary d-flex align-items-center justify-content-center shadow" style="width: 35px; height: 35px; border: 3px solid white;">3</span>
                             </div>
-                            <ul class="list-unstyled mb-5 text-start">
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 1 Giant Obstacle Course</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 1 Interactive Game</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 2 Concession Machines</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> 1 Professional Attendant</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Free Setup & Teardown</li>
-                                <li class="mb-3"><i class="bi bi-check2 text-primary me-2"></i> Event Planning Support</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-outline-primary w-100 py-3">Select Plan</a>
+                            <h5 class="fw-bold">We Deliver</h5>
+                            <p class="small text-muted mb-0">Our professional team arrives, sets up, and inspects everything for safety.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="custom-card border shadow-sm">
+                            <div class="position-relative mb-4">
+                                <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 4">
+                                <span class="position-absolute top-0 start-50 translate-middle badge rounded-circle bg-primary d-flex align-items-center justify-content-center shadow" style="width: 35px; height: 35px; border: 3px solid white;">4</span>
+                            </div>
+                            <h5 class="fw-bold">Have Fun!</h5>
+                            <p class="small text-muted mb-0">You enjoy the event to the fullest, and we come back later for a stress-free pickup.</p>
                         </div>
                     </div>
                 </div>
@@ -145,25 +259,31 @@
 
         <!-- Delivery Fee Section -->
         <section class="section-padding bg-body-tertiary">
-            <div class="container text-center">
-                <h3 class="fw-bold mb-4">Delivery Zones</h3>
-                <div class="row g-4">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Delivery Zones</h2>
+                    <p class="text-muted">We deliver to your doorstep! Find your zone based on distance from our Dallas hub.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
                     <div class="col-md-4">
-                        <div class="bg-white p-4 rounded-4">
-                            <h5 class="fw-bold">0-15 Miles</h5>
-                            <p class="mb-0 text-success fw-bold">FREE Delivery</p>
+                        <div class="custom-card border shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Local">
+                            <h5 class="fw-bold mb-2">0-15 Miles</h5>
+                            <p class="mb-0 text-success fw-bold fs-5">FREE Delivery</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="bg-white p-4 rounded-4">
-                            <h5 class="fw-bold">16-30 Miles</h5>
-                            <p class="mb-0 text-dark fw-bold">$25 Fee</p>
+                        <div class="custom-card border shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1557333610-90ee4a951ecf?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Mid">
+                            <h5 class="fw-bold mb-2">16-30 Miles</h5>
+                            <p class="mb-0 text-dark fw-bold fs-5">$25 Flat Fee</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="bg-white p-4 rounded-4">
-                            <h5 class="fw-bold">31-50 Miles</h5>
-                            <p class="mb-0 text-dark fw-bold">$50 Fee</p>
+                        <div class="custom-card border shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1464851707681-f9d5fdaccea8?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Long">
+                            <h5 class="fw-bold mb-2">31-50 Miles</h5>
+                            <p class="mb-0 text-dark fw-bold fs-5">$50 Flat Fee</p>
                         </div>
                     </div>
                 </div>

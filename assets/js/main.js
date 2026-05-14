@@ -91,4 +91,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.section-padding').forEach(section => {
         observer.observe(section);
     });
+
+    // Password Toggle Logic
+    const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+    togglePasswordButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const container = this.closest('.position-relative');
+            const passwordInput = container.querySelector('input');
+            const eyeIcon = this.querySelector('i');
+
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            
+            // Toggle the eye icon
+            eyeIcon.classList.toggle('bi-eye');
+            eyeIcon.classList.toggle('bi-eye-slash');
+        });
+    });
 });
