@@ -208,7 +208,19 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1199px) {
     .offcanvas.offcanvas-end {
         width: 100% !important;
+        height: 100dvh !important;
+        max-height: 100dvh !important;
         border: none !important;
+    }
+    
+    .navbar-toggler {
+        min-height: 48px;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .navbar-toggler-icon {
+        height: 1.8em;
+        width: 1.8em;
     }
     
     .offcanvas-body {
@@ -223,8 +235,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .offcanvas-body .nav-link {
         font-size: 1.2rem;
-        padding: 1rem 0 !important;
+        padding: 1rem 1.2rem !important;
         border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .offcanvas-body .nav-link::after {
+        display: none !important;
     }
 
     [data-bs-theme="dark"] .offcanvas-body .nav-link {

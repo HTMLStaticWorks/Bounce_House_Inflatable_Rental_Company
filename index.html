@@ -50,15 +50,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div class="d-flex d-xl-none align-items-center mb-4 pb-3 border-bottom">
-                            <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
-                                <i class="bi bi-moon-stars-fill"></i>
-                            </button>
-                            <div class="me-auto"></div>
-                            <button class="btn btn-circle rtl-toggle" aria-label="Toggle RTL">
-                                <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
-                            </button>
-                        </div>
+
                         <ul class="navbar-nav justify-content-center flex-grow-1">
                             <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
                             <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
@@ -68,9 +60,18 @@
                             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
-                        <div class="d-xl-none mt-3">
+                        <div class="d-xl-none mt-auto">
                             <a href="login.html" class="btn btn-primary btn-nav w-100 mb-2">Login</a>
-                            <a href="register.html" class="btn btn-primary btn-nav w-100">Sign Up</a>
+                            <a href="register.html" class="btn btn-primary btn-nav w-100 mb-4">Sign Up</a>
+                            <div class="d-flex align-items-center pt-3 border-top">
+                                <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
+                                    <i class="bi bi-moon-stars-fill"></i>
+                                </button>
+                                <div class="me-auto"></div>
+                                <button class="btn btn-circle rtl-toggle" aria-label="Toggle RTL">
+                                    <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +197,7 @@
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="custom-card">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400" alt="Safety" class="card-img-custom">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400" alt="Safety" class="card-img-custom mx-auto d-block" style="width: 140px; height: 140px;">
                             <h5>Safety Inspected</h5>
                             <p class="text-muted">Every unit is inspected and deep-cleaned after every single use.</p>
                         </div>
@@ -204,7 +205,7 @@
 
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="custom-card">
-                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" alt="Delivery" class="card-img-custom">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" alt="Delivery" class="card-img-custom mx-auto d-block" style="width: 140px; height: 140px;">
                             <h5>On-Time Delivery</h5>
                             <p class="text-muted">We arrive at least 30 minutes before your event starts for setup.</p>
                         </div>
@@ -212,7 +213,7 @@
 
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="custom-card">
-                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400" alt="Pricing" class="card-img-custom">
+                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400" alt="Pricing" class="card-img-custom mx-auto d-block" style="width: 140px; height: 140px;">
                             <h5>Transparent Pricing</h5>
                             <p class="text-muted">No hidden fees. What you see is what you pay, including setup.</p>
                         </div>
@@ -260,12 +261,12 @@
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="bg-body-tertiary p-4 rounded-4 h-100">
-                            <div class="text-warning mb-3">
+                        <div class="bg-body-tertiary p-4 rounded-4 h-100 d-flex flex-column">
+                            <div class="text-warning mb-3 text-center">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fst-italic">"Best rental experience ever! The bounce house was spotless and the setup crew was so professional."</p>
-                            <div class="d-flex align-items-center mt-4">
+                            <p class="fst-italic text-center">"Best rental experience ever! The bounce house was spotless and the setup crew was so professional."</p>
+                            <div class="d-flex justify-content-center align-items-center mt-auto text-start">
                                 <img src="https://randomuser.me/api/portraits/women/1.jpg" class="rounded-circle me-3" width="50" alt="User">
                                 <div>
                                     <h6 class="mb-0">Sarah Jenkins</h6>
@@ -275,12 +276,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="bg-body-tertiary p-4 rounded-4 h-100">
-                            <div class="text-warning mb-3">
+                        <div class="bg-body-tertiary p-4 rounded-4 h-100 d-flex flex-column">
+                            <div class="text-warning mb-3 text-center">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fst-italic">"The water slide was the highlight of the summer! Kids stayed entertained for hours. Highly recommend!"</p>
-                            <div class="d-flex align-items-center mt-4">
+                            <p class="fst-italic text-center">"The water slide was the highlight of the summer! Kids stayed entertained for hours. Highly recommend!"</p>
+                            <div class="d-flex justify-content-center align-items-center mt-auto text-start">
                                 <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle me-3" width="50" alt="User">
                                 <div>
                                     <h6 class="mb-0">Mike Thompson</h6>
@@ -290,12 +291,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="bg-body-tertiary p-4 rounded-4 h-100">
-                            <div class="text-warning mb-3">
+                        <div class="bg-body-tertiary p-4 rounded-4 h-100 d-flex flex-column">
+                            <div class="text-warning mb-3 text-center">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fst-italic">"Seamless booking process and great communication. JumpJoy is my go-to for all school fundraisers."</p>
-                            <div class="d-flex align-items-center mt-4">
+                            <p class="fst-italic text-center">"Seamless booking process and great communication. JumpJoy is my go-to for all school fundraisers."</p>
+                            <div class="d-flex justify-content-center align-items-center mt-auto text-start">
                                 <img src="https://randomuser.me/api/portraits/women/3.jpg" class="rounded-circle me-3" width="50" alt="User">
                                 <div>
                                     <h6 class="mb-0">Emily Rivera</h6>
