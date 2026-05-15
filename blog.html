@@ -20,14 +20,14 @@
 
     <!-- Header -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <i class="bi bi-rocket-takeoff-fill me-2"></i>
                     <span>JumpJoy</span>
                 </a>
-                <div class="d-flex align-items-center order-lg-last ms-2">
-                    <div class="d-none d-lg-flex align-items-center">
+                <div class="d-flex align-items-center order-xl-last ms-2">
+                    <div class="d-none d-xl-flex align-items-center">
                         <button class="btn btn-circle me-2 theme-toggle" aria-label="Toggle theme">
                             <i class="bi bi-moon-stars-fill"></i>
                         </button>
@@ -35,8 +35,8 @@
                             <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
                         </button>
                     </div>
-                    <a href="login.html" class="btn btn-primary btn-nav d-none d-sm-inline-block me-2">Login</a>
-                    <a href="register.html" class="btn btn-primary btn-nav d-none d-sm-inline-block">Sign Up</a>
+                    <a href="login.html" class="btn btn-primary btn-nav d-none d-xl-inline-block me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-nav d-none d-xl-inline-block">Sign Up</a>
                     <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
                 </div>
                 <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
@@ -45,11 +45,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div class="d-flex d-lg-none align-items-center mb-4 pb-3 border-bottom">
+                        <div class="d-flex d-xl-none align-items-center mb-4 pb-3 border-bottom">
                             <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
                                 <i class="bi bi-moon-stars-fill"></i>
                             </button>
-                            <span class="me-auto">Switch Theme</span>
+                            <div class="me-auto"></div>
                             <button class="btn btn-circle rtl-toggle" aria-label="Toggle RTL">
                                 <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
                             </button>
@@ -63,7 +63,7 @@
                             <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
-                        <div class="d-sm-none mt-3">
+                        <div class="d-xl-none mt-3">
                             <a href="login.html" class="btn btn-primary btn-nav w-100 mb-2">Login</a>
                             <a href="register.html" class="btn btn-primary btn-nav w-100">Sign Up</a>
                         </div>
@@ -91,51 +91,7 @@
         <section class="section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <!-- Blog Posts -->
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <article class="card h-100 border-0 shadow-sm">
-                                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Blog">
-                                    <div class="card-body">
-                                        <div class="mb-2">
-                                            <span class="badge bg-primary-subtle text-primary">Safety</span>
-                                            <small class="text-muted ms-2">May 10, 2026</small>
-                                        </div>
-                                        <h5 class="fw-bold"><a href="blog-details.html" class="text-decoration-none text-dark">5 Safety Tips for Backyard Parties</a></h5>
-                                        <p class="text-muted small">Ensure your little ones stay safe while they have the time of their lives...</p>
-                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-6">
-                                <article class="card h-100 border-0 shadow-sm">
-                                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Blog">
-                                    <div class="card-body">
-                                        <div class="mb-2">
-                                            <span class="badge bg-secondary-subtle text-secondary">Planning</span>
-                                            <small class="text-muted ms-2">May 05, 2026</small>
-                                        </div>
-                                        <h5 class="fw-bold"><a href="blog-details.html" class="text-decoration-none text-dark">How to Choose the Right Bounce House</a></h5>
-                                        <p class="text-muted small">Size matters! Learn how to match your guest list to the perfect inflatable...</p>
-                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        
-                        <!-- Pagination -->
-                        <nav class="mt-5">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 order-1 order-lg-2">
                         <!-- Sidebar -->
                         <div class="sticky-top" style="top: 100px;">
                             <div class="card border-0 shadow-sm p-4 mb-4">
@@ -154,7 +110,7 @@
                                     <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between">Event Tips <span>(10)</span></a></li>
                                 </ul>
                             </div>
-                            <div class="card border-0 shadow-sm p-4 bg-primary text-white">
+                            <div class="card border-0 shadow-sm p-4 bg-primary text-white mb-4">
                                 <h5 class="fw-bold mb-3">Newsletter</h5>
                                 <p class="small opacity-75">Get the latest party tips delivered to your inbox.</p>
                                 <form>
@@ -163,6 +119,78 @@
                                 </form>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-lg-8 order-2 order-lg-1">
+                        <!-- Blog Posts -->
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <article class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=400" class="card-img-top blog-card-img" alt="Blog">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <span class="badge bg-primary-subtle text-primary">Safety</span>
+                                            <small class="text-muted ms-2">May 10, 2026</small>
+                                        </div>
+                                        <h5 class="fw-bold"><a href="blog-details.html" class="text-decoration-none text-body">5 Safety Tips for Backyard Parties</a></h5>
+                                        <p class="text-muted small blog-card-text">Ensure your little ones stay safe while they have the time of their lives...</p>
+                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold mt-auto">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=400" class="card-img-top blog-card-img" alt="Blog">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <span class="badge bg-secondary-subtle text-secondary">Planning</span>
+                                            <small class="text-muted ms-2">May 05, 2026</small>
+                                        </div>
+                                        <h5 class="fw-bold"><a href="blog-details.html" class="text-decoration-none text-body">How to Choose the Right Bounce House</a></h5>
+                                        <p class="text-muted small blog-card-text">Size matters! Learn how to match your guest list to the perfect inflatable...</p>
+                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold mt-auto">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1533749047139-189de3cf06d3?auto=format&fit=crop&q=80&w=400" class="card-img-top blog-card-img" alt="Blog">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <span class="badge bg-success-subtle text-success">Summer</span>
+                                            <small class="text-muted ms-2">April 28, 2026</small>
+                                        </div>
+                                        <h5 class="fw-bold"><a href="blog-details.html" class="text-decoration-none text-body">Top 5 Water Slides for Summer Events</a></h5>
+                                        <p class="text-muted small blog-card-text">Beat the heat with our selection of the most thrilling water slides for all ages...</p>
+                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold mt-auto">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=400" class="card-img-top blog-card-img" alt="Blog">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <span class="badge bg-info-subtle text-info">Corporate</span>
+                                            <small class="text-muted ms-2">April 20, 2026</small>
+                                        </div>
+                                        <h5 class="fw-bold"><a href="blog-details.html" class="text-decoration-none text-body">Corporate Team Building with Inflatables</a></h5>
+                                        <p class="text-muted small blog-card-text">Boost morale and foster collaboration with interactive obstacle courses and games...</p>
+                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold mt-auto">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        
+                        <!-- Pagination -->
+                        <nav class="mt-5">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -178,35 +206,53 @@
                         <i class="bi bi-rocket-takeoff-fill me-2"></i>
                         <span>JumpJoy</span>
                     </a>
-                    <p class="text-secondary small">Your number one choice for safe, clean, and professional inflatable rentals. We make every party epic.</p>
+                    <p class="text-secondary">Bringing the ultimate fun to your doorstep with premium, safe, and sanitized inflatable rentals.</p>
+                    <div class="d-flex gap-3 fs-5 mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h6 class="text-white mb-4">Quick Links</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <h6 class="text-white fw-bold mb-4">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Our Fleet</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h6 class="text-white mb-4">Support</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Waiver</a></li>
-                        <li><a href="#">Privacy</a></li>
+                    <h6 class="text-white fw-bold mb-4">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">FAQs</a></li>
+                        <li class="mb-2"><a href="#">Safety Rules</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <h6 class="text-white mb-4">Newsletter</h6>
+                    <h6 class="text-white fw-bold mb-4">Newsletter</h6>
+                    <p class="text-secondary">Subscribe for party tips and exclusive discounts.</p>
                     <form class="d-flex gap-2">
-                        <input type="email" class="form-control form-control-sm bg-transparent border-secondary text-white" placeholder="Email">
-                        <button class="btn btn-primary btn-sm">Join</button>
+                        <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
+                        <button class="btn btn-primary" type="submit">Join</button>
                     </form>
                 </div>
             </div>
             <hr class="my-5 border-secondary">
-            <p class="text-center text-secondary small">&copy; 2026 JumpJoy Rentals.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-secondary">&copy; 2026 JumpJoy Rentals. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item ms-3"><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 

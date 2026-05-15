@@ -20,14 +20,14 @@
 
     <!-- Header -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <i class="bi bi-rocket-takeoff-fill me-2"></i>
                     <span>JumpJoy</span>
                 </a>
-                <div class="d-flex align-items-center order-lg-last ms-2">
-                    <div class="d-none d-lg-flex align-items-center">
+                <div class="d-flex align-items-center order-xl-last ms-2">
+                    <div class="d-none d-xl-flex align-items-center">
                         <button class="btn btn-circle me-2 theme-toggle" aria-label="Toggle theme">
                             <i class="bi bi-moon-stars-fill"></i>
                         </button>
@@ -35,8 +35,8 @@
                             <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
                         </button>
                     </div>
-                    <a href="login.html" class="btn btn-primary btn-nav d-none d-sm-inline-block me-2">Login</a>
-                    <a href="register.html" class="btn btn-primary btn-nav d-none d-sm-inline-block">Sign Up</a>
+                    <a href="login.html" class="btn btn-primary btn-nav d-none d-xl-inline-block me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-nav d-none d-xl-inline-block">Sign Up</a>
                     <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
                 </div>
                 <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
@@ -45,11 +45,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div class="d-flex d-lg-none align-items-center mb-4 pb-3 border-bottom">
+                        <div class="d-flex d-xl-none align-items-center mb-4 pb-3 border-bottom">
                             <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
                                 <i class="bi bi-moon-stars-fill"></i>
                             </button>
-                            <span class="me-auto">Switch Theme</span>
+                            <div class="me-auto"></div>
                             <button class="btn btn-circle rtl-toggle" aria-label="Toggle RTL">
                                 <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
                             </button>
@@ -63,7 +63,7 @@
                             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
-                        <div class="d-sm-none mt-3">
+                        <div class="d-xl-none mt-3">
                             <a href="login.html" class="btn btn-primary btn-nav w-100 mb-2">Login</a>
                             <a href="register.html" class="btn btn-primary btn-nav w-100">Sign Up</a>
                         </div>
@@ -93,13 +93,13 @@
             <div class="container pt-5">
                 <div class="row g-4 justify-content-center align-items-stretch">
                     <!-- Basic Plan -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card h-100 border-0 shadow-sm p-4 text-center custom-card mt-5">
                             <div class="mb-4">
                                 <span class="text-uppercase fw-bold text-muted small" style="letter-spacing: 1px;">Backyard Bash</span>
                                 <h3 class="fw-bold mt-2">Basic Party</h3>
                                 <div class="py-3">
-                                    <span class="display-4 fw-bold text-dark">$150</span>
+                                    <span class="display-4 fw-bold">$150</span>
                                     <span class="text-muted d-block small">Per Event</span>
                                 </div>
                             </div>
@@ -112,43 +112,43 @@
                                 <li class="mb-3 d-flex align-items-center text-muted opacity-50"><i class="bi bi-x-circle fs-5 me-2"></i> Concession Machine</li>
                                 <li class="mb-3 d-flex align-items-center text-muted opacity-50"><i class="bi bi-x-circle fs-5 me-2"></i> Attendant Provided</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline-primary btn-lg w-100 py-3 rounded-3">Select Plan</a>
+                            <a href="contact.html" class="btn btn-outline-primary btn-lg w-100 py-3 rounded-3 mt-auto">Select Plan</a>
                         </div>
                     </div>
 
                     <!-- Deluxe Plan (Featured) -->
-                    <div class="col-lg-4">
-                        <div class="card h-100 border-primary border-2 shadow-lg p-4 text-center custom-card position-relative bg-white mt-5" style="overflow: visible;">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-primary border-2 shadow-lg p-4 text-center custom-card position-relative mt-5" style="overflow: visible;">
                             <div class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-4 py-2 shadow-sm" style="z-index: 999; margin-top: -5px;">MOST POPULAR</div>
                             <div class="mb-4">
                                 <span class="text-uppercase fw-bold text-primary small" style="letter-spacing: 1px;">Best Value</span>
                                 <h3 class="fw-bold mt-2">Deluxe Fun</h3>
                                 <div class="py-3">
-                                    <span class="display-4 fw-bold text-dark">$275</span>
+                                    <span class="display-4 fw-bold">$275</span>
                                     <span class="text-muted d-block small">Per Event</span>
                                 </div>
                             </div>
                             <hr class="my-4 opacity-10">
                             <ul class="list-unstyled mb-5 text-start flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center fw-bold text-dark"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Combo Unit (Bounce + Slide)</li>
+                                <li class="mb-3 d-flex align-items-center fw-bold"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Combo Unit (Bounce + Slide)</li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 8-Hour Rental Period</li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> 1 Concession Machine</li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Free Setup & Teardown</li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Priority Delivery</li>
                                 <li class="mb-3 d-flex align-items-center text-muted opacity-50"><i class="bi bi-x-circle fs-5 me-2"></i> Attendant Provided</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary btn-lg w-100 py-3 rounded-3 shadow">Get Started Now</a>
+                            <a href="contact.html" class="btn btn-primary btn-lg w-100 py-3 rounded-3 mt-auto">Get Started Now</a>
                         </div>
                     </div>
 
                     <!-- Mega Plan -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card h-100 border-0 shadow-sm p-4 text-center custom-card mt-5">
                             <div class="mb-4">
                                 <span class="text-uppercase fw-bold text-muted small" style="letter-spacing: 1px;">Large Events</span>
                                 <h3 class="fw-bold mt-2">Mega Event</h3>
                                 <div class="py-3">
-                                    <span class="display-4 fw-bold text-dark">$550</span>
+                                    <span class="display-4 fw-bold">$550</span>
                                     <span class="text-muted d-block small">Per Event</span>
                                 </div>
                             </div>
@@ -161,7 +161,7 @@
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Free Setup & Teardown</li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i> Planning Support</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline-primary btn-lg w-100 py-3 rounded-3">Inquire Now</a>
+                            <a href="contact.html" class="btn btn-outline-primary btn-lg w-100 py-3 rounded-3 mt-auto">Inquire Now</a>
                         </div>
                     </div>
                 </div>
@@ -175,8 +175,8 @@
                     <h2 class="fw-bold">Make it a Complete Party</h2>
                     <p class="text-muted">Add these extras to any rental package for maximum fun.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
                         <div class="custom-card border-0">
                             <img src="https://images.unsplash.com/photo-1621619856624-42fd193a0661?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Popcorn">
                             <h6 class="fw-bold">Popcorn Machine</h6>
@@ -185,7 +185,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="custom-card border-0">
                             <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Tables">
                             <h6 class="fw-bold">Tables & Chairs</h6>
@@ -193,7 +193,7 @@
                             <span class="text-primary fw-bold">$40/Day</span>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="custom-card border-0">
                             <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Generator">
                             <h6 class="fw-bold">Power Generator</h6>
@@ -212,8 +212,8 @@
                     <h2 class="fw-bold">How It Works</h2>
                     <p class="text-muted">Reserving your fun is as easy as 1-2-3-4.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-3">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-md-6">
                         <div class="custom-card border shadow-sm">
                             <div class="position-relative mb-4">
                                 <img src="https://images.unsplash.com/photo-1533749047139-189de3cf06d3?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 1">
@@ -223,7 +223,7 @@
                             <p class="small text-muted mb-0">Browse our massive collection and pick your favorites for the big day.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="custom-card border shadow-sm">
                             <div class="position-relative mb-4">
                                 <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 2">
@@ -233,7 +233,7 @@
                             <p class="small text-muted mb-0">Select your date, sign the waiver, and secure your spot with a few clicks.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="custom-card border shadow-sm">
                             <div class="position-relative mb-4">
                                 <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 3">
@@ -243,7 +243,7 @@
                             <p class="small text-muted mb-0">Our professional team arrives, sets up, and inspects everything for safety.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="custom-card border shadow-sm">
                             <div class="position-relative mb-4">
                                 <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-0" alt="Step 4">
@@ -265,25 +265,25 @@
                     <p class="text-muted">We deliver to your doorstep! Find your zone based on distance from our Dallas hub.</p>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="custom-card border shadow-sm">
                             <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Local">
                             <h5 class="fw-bold mb-2">0-15 Miles</h5>
                             <p class="mb-0 text-success fw-bold fs-5">FREE Delivery</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="custom-card border shadow-sm">
                             <img src="https://images.unsplash.com/photo-1557333610-90ee4a951ecf?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Mid">
                             <h5 class="fw-bold mb-2">16-30 Miles</h5>
-                            <p class="mb-0 text-dark fw-bold fs-5">$25 Flat Fee</p>
+                            <p class="mb-0 fw-bold fs-5">$25 Flat Fee</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="custom-card border shadow-sm">
                             <img src="https://images.unsplash.com/photo-1464851707681-f9d5fdaccea8?auto=format&fit=crop&q=80&w=400" class="card-img-custom mb-3" alt="Long">
                             <h5 class="fw-bold mb-2">31-50 Miles</h5>
-                            <p class="mb-0 text-dark fw-bold fs-5">$50 Flat Fee</p>
+                            <p class="mb-0 fw-bold fs-5">$50 Flat Fee</p>
                         </div>
                     </div>
                 </div>
@@ -300,34 +300,53 @@
                         <i class="bi bi-rocket-takeoff-fill me-2"></i>
                         <span>JumpJoy</span>
                     </a>
-                    <p class="text-secondary small">Your number one choice for safe, clean, and professional inflatable rentals.</p>
+                    <p class="text-secondary">Bringing the ultimate fun to your doorstep with premium, safe, and sanitized inflatable rentals.</p>
+                    <div class="d-flex gap-3 fs-5 mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h6 class="text-white mb-4">Quick Links</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <h6 class="text-white fw-bold mb-4">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Our Fleet</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h6 class="text-white mb-4">Support</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Waiver</a></li>
+                    <h6 class="text-white fw-bold mb-4">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">FAQs</a></li>
+                        <li class="mb-2"><a href="#">Safety Rules</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <h6 class="text-white mb-4">Newsletter</h6>
+                    <h6 class="text-white fw-bold mb-4">Newsletter</h6>
+                    <p class="text-secondary">Subscribe for party tips and exclusive discounts.</p>
                     <form class="d-flex gap-2">
-                        <input type="email" class="form-control form-control-sm bg-transparent border-secondary text-white" placeholder="Email">
-                        <button class="btn btn-primary btn-sm">Join</button>
+                        <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
+                        <button class="btn btn-primary" type="submit">Join</button>
                     </form>
                 </div>
             </div>
             <hr class="my-5 border-secondary">
-            <p class="text-center text-secondary small">&copy; 2026 JumpJoy Rentals.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-secondary">&copy; 2026 JumpJoy Rentals. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item ms-3"><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 

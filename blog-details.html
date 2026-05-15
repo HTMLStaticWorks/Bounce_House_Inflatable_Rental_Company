@@ -20,14 +20,14 @@
 
     <!-- Header -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <i class="bi bi-rocket-takeoff-fill me-2"></i>
                     <span>JumpJoy</span>
                 </a>
-                <div class="d-flex align-items-center order-lg-last ms-2">
-                    <div class="d-none d-lg-flex align-items-center">
+                <div class="d-flex align-items-center order-xl-last ms-2">
+                    <div class="d-none d-xl-flex align-items-center">
                         <button class="btn btn-circle me-2 theme-toggle" aria-label="Toggle theme">
                             <i class="bi bi-moon-stars-fill"></i>
                         </button>
@@ -35,8 +35,8 @@
                             <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
                         </button>
                     </div>
-                    <a href="login.html" class="btn btn-primary btn-nav d-none d-sm-inline-block me-2">Login</a>
-                    <a href="register.html" class="btn btn-primary btn-nav d-none d-sm-inline-block">Sign Up</a>
+                    <a href="login.html" class="btn btn-primary btn-nav d-none d-xl-inline-block me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-nav d-none d-xl-inline-block">Sign Up</a>
                     <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
                 </div>
                 <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
@@ -45,7 +45,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div class="d-flex d-lg-none align-items-center mb-4 pb-3 border-bottom">
+                        <div class="d-flex d-xl-none align-items-center mb-4 pb-3 border-bottom">
                             <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
                                 <i class="bi bi-moon-stars-fill"></i>
                             </button>
@@ -63,7 +63,7 @@
                             <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
-                        <div class="d-sm-none mt-3">
+                        <div class="d-xl-none mt-3">
                             <a href="login.html" class="btn btn-primary btn-nav w-100 mb-2">Login</a>
                             <a href="register.html" class="btn btn-primary btn-nav w-100">Sign Up</a>
                         </div>
@@ -169,34 +169,53 @@
                         <i class="bi bi-rocket-takeoff-fill me-2"></i>
                         <span>JumpJoy</span>
                     </a>
-                    <p class="text-secondary small">Your number one choice for safe, clean, and professional inflatable rentals.</p>
+                    <p class="text-secondary">Bringing the ultimate fun to your doorstep with premium, safe, and sanitized inflatable rentals.</p>
+                    <div class="d-flex gap-3 fs-5 mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h6 class="text-white mb-4">Quick Links</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <h6 class="text-white fw-bold mb-4">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Our Fleet</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h6 class="text-white mb-4">Support</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Waiver</a></li>
+                    <h6 class="text-white fw-bold mb-4">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">FAQs</a></li>
+                        <li class="mb-2"><a href="#">Safety Rules</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <h6 class="text-white mb-4">Newsletter</h6>
+                    <h6 class="text-white fw-bold mb-4">Newsletter</h6>
+                    <p class="text-secondary">Subscribe for party tips and exclusive discounts.</p>
                     <form class="d-flex gap-2">
-                        <input type="email" class="form-control form-control-sm bg-transparent border-secondary text-white" placeholder="Email">
-                        <button class="btn btn-primary btn-sm">Join</button>
+                        <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
+                        <button class="btn btn-primary" type="submit">Join</button>
                     </form>
                 </div>
             </div>
             <hr class="my-5 border-secondary">
-            <p class="text-center text-secondary small">&copy; 2026 JumpJoy Rentals.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-secondary">&copy; 2026 JumpJoy Rentals. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item ms-3"><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
