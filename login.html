@@ -27,13 +27,24 @@
             justify-content: center;
             background: var(--bs-body-tertiary);
         }
+        .auth-link {
+            color: var(--bs-primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+        .auth-link:hover {
+            color: #c05a0a;
+            opacity: 0.85;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <div class="auth-bg">
         <div class="auth-card p-4">
-            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="card border border-secondary-subtle shadow-lg rounded-4 overflow-hidden">
                 <div class="p-4 p-md-5">
                     <div class="text-center mb-5">
                         <a href="index.html" class="navbar-brand d-inline-flex align-items-center mb-3">
@@ -57,12 +68,13 @@
                                     <i class="bi bi-eye"></i>
                                 </button>
                             </div>
-                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                        </div>
+                        <div class="mb-4 mt-3 d-flex justify-content-between align-items-center">
                             <div class="form-check mb-0">
                                 <input type="checkbox" class="form-check-input" id="remember">
                                 <label class="form-check-label small" for="remember">Remember me</label>
                             </div>
-                            <a href="forgot-password.html" class="small text-decoration-none">Forgot Password?</a>
+                            <a href="forgot-password.html" class="auth-link small">Forgot Password?</a>
                         </div>
                         <button type="submit" class="btn btn-primary w-100 py-2 mb-4">Login</button>
                     </form>
@@ -77,7 +89,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <p class="small text-muted mb-0">Don't have an account? <a href="register.html" class="fw-bold text-decoration-none text-primary">Register</a></p>
+                        <p class="small text-muted mb-0">Don't have an account? <a href="register.html" class="auth-link">Register</a></p>
                     </div>
                 </div>
             </div>

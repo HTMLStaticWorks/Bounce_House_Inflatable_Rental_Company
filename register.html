@@ -27,13 +27,24 @@
             justify-content: center;
             background: var(--bs-body-tertiary);
         }
+        .auth-link {
+            color: var(--bs-primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+        .auth-link:hover {
+            color: #c05a0a;
+            opacity: 0.85;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <div class="auth-bg">
         <div class="auth-card p-4">
-            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="card border border-secondary-subtle shadow-lg rounded-4 overflow-hidden">
                 <div class="p-4 p-md-5">
                     <div class="text-center mb-5">
                         <a href="index.html" class="navbar-brand d-inline-flex align-items-center mb-3">
@@ -79,7 +90,7 @@
                             <div class="col-md-12">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="terms" required>
-                                    <label class="form-check-label small" for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                                    <label class="form-check-label small" for="terms">I agree to the <a href="#" class="auth-link">Terms & Conditions</a></label>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -100,7 +111,7 @@
                     <hr class="my-4">
                     
                     <div class="text-center">
-                        <p class="small text-muted mb-0">Already have an account? <a href="login.html" class="fw-bold text-decoration-none text-primary">Login</a></p>
+                        <p class="small text-muted mb-0">Already have an account? <a href="login.html" class="auth-link">Login</a></p>
                     </div>
                 </div>
             </div>
