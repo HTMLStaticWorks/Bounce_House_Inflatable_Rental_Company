@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | JumpJoy Rentals</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F97316'><path d='M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.064a2.783 2.783 0 0 0-.716-1.615 2.785 2.785 0 0 0-1.615-.716c-.484-.054-1.177-.05-2.064.16-1.534.363-3.626 1.334-6.218 3.641l-.32.285L1.45 3.52a.82.82 0 0 0-.732.44.82.82 0 0 0 .032.85l1.99 3.101-.285.32c-2.307 2.592-3.33 4.684-3.693 6.218a2.13 2.13 0 0 0 .588 1.812l.02.02.02.02a2.13 2.13 0 0 0 1.812.588c1.534-.363 3.626-1.386 6.218-3.693l.32-.285 3.101 1.99a.82.82 0 0 0 .85.032.82.82 0 0 0 .44-.732l-.485-3.515.285-.32zM12.148 2.47a2.031 2.031 0 1 1 .497.497 2.031 2.031 0 0 1-.497-.497z'/><path d='M7.005 12.1a1 1 0 1 0 1.923-.538c-.08-.287-.31-.593-.7-.987L7.48 9.826a.566.566 0 0 0-.73 0l-.747.747c-.394.39-.7.62-.987.7a1 1 0 1 0 .538 1.923l.135-.038a1.656 1.656 0 0 1 1.18 0l.135.038zm3.28-3.28a1 1 0 1 0 1.923-.538c-.08-.287-.31-.593-.7-.987l-.747-.747a.566.566 0 0 0-.73 0l-.747.747c-.394.39-.7.62-.987.7a1 1 0 1 0 .538 1.923l.135-.038a1.656 1.656 0 0 1 1.18 0l.135.038z'/></svg>">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hover-primary:hover {
+            color: var(--primary-color) !important;
+        }
+        .transition {
+            transition: var(--transition);
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light-subtle position-relative overflow-hidden">
+    
+    <!-- Abstract Background Elements -->
+    <div class="hero-glow-blob top-0 start-0 translate-middle"></div>
+    <div class="hero-glow-blob bottom-0 end-0 translate-middle" style="background: var(--secondary-color); animation-delay: 2s;"></div>
+    
+    <main class="container d-flex flex-column justify-content-center align-items-center flex-grow-1 position-relative z-1 text-center py-5">
+        
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center mb-5 display-4 fw-bold text-dark text-decoration-none" href="index.html" style="font-size: 2.5rem;">
+            <i class="bi bi-rocket-takeoff-fill text-primary me-3"></i>
+            <span>JumpJoy</span>
+        </a>
+
+        <!-- Main Content -->
+        <span class="badge bg-primary text-white px-3 py-2 rounded-pill mb-4 animate-fade-up">Get Ready For Fun</span>
+        <h1 class="display-2 fw-800 mb-4 animate-fade-up delay-1 text-dark">Something Awesome Is <span class="text-primary position-relative">Coming Soon</span></h1>
+        
+        <p class="lead text-muted mb-5 animate-fade-up delay-2 mx-auto" style="max-width: 650px;">
+            We're currently working hard behind the scenes to build a brand new experience for you. JumpJoy Rentals is upgrading our fleet and website to bring the ultimate bounce house experience straight to your backyard.
+        </p>
+
+        <!-- Notify Me Form -->
+        <div class="card bg-body border-0 shadow-lg p-2 rounded-pill mb-5 animate-fade-up delay-3 mx-auto w-100" style="max-width: 500px;">
+            <form class="d-flex align-items-center">
+                <i class="bi bi-envelope text-muted ms-3 fs-5"></i>
+                <input type="email" class="form-control border-0 bg-transparent shadow-none px-3" placeholder="Enter your email to get notified" required>
+                <button type="button" class="btn btn-primary rounded-pill px-4 py-2 fw-bold" onclick="alert('Thanks for subscribing! We will let you know when we launch.')">Notify Me</button>
+            </form>
+        </div>
+
+        <!-- Social Links -->
+        <div class="d-flex gap-4 fs-4 animate-fade-up delay-3 mt-2">
+            <a href="#" class="text-secondary hover-primary transition"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary hover-primary transition"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary hover-primary transition"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-secondary hover-primary transition"><i class="bi bi-youtube"></i></a>
+        </div>
+        
+    </main>
+
+   
+
+    <!-- Bootstrap JS & Main JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
