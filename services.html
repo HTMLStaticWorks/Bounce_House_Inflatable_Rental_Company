@@ -26,7 +26,7 @@
                     <i class="bi bi-rocket-takeoff-fill me-2"></i>
                     <span>JumpJoy</span>
                 </a>
-                <div class="d-flex align-items-center order-xl-last ms-2">
+                <div class="d-flex align-items-center order-xl-last mx-xl-4 mx-2">
                     <div class="d-none d-xl-flex align-items-center">
                         <button class="btn btn-circle me-2 theme-toggle" aria-label="Toggle theme">
                             <i class="bi bi-moon-stars-fill"></i>
@@ -35,8 +35,8 @@
                             <span class="fw-bold" style="font-size: 0.7rem;">RTL</span>
                         </button>
                     </div>
-                    <a href="login.html" class="btn btn-primary btn-nav d-none d-xl-inline-block me-2">Login</a>
-                    <a href="register.html" class="btn btn-primary btn-nav d-none d-xl-inline-block">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-primary btn-nav d-none d-xl-inline-block mx-2">Login</a>
+                    <a href="booking.html" class="btn btn-primary btn-nav d-none d-xl-inline-block">Book Now</a>
                     <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
                 </div>
                 <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
@@ -56,8 +56,8 @@
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                         <div class="d-xl-none mt-3">
-                            <a href="login.html" class="btn btn-primary btn-nav w-100 mb-2">Login</a>
-                            <a href="register.html" class="btn btn-primary btn-nav w-100 mb-4">Sign Up</a>
+                            <a href="login.html" class="btn btn-outline-primary btn-nav w-100 mb-2">Login</a>
+                            <a href="booking.html" class="btn btn-primary btn-nav w-100 mb-4">Book Now</a>
                             <div class="d-flex align-items-center pt-3 border-top">
                                 <button class="btn btn-circle me-3 theme-toggle" aria-label="Toggle theme">
                                     <i class="bi bi-moon-stars-fill"></i>
@@ -74,137 +74,53 @@
         </nav>
     </header>
 
-    <main class="mt-5 pt-5">
-        <!-- Services Hero Section -->
-        <section class="services-hero position-relative d-flex align-items-center justify-content-center text-center text-white">
-            <div class="services-hero-overlay"></div>
-            <div class="container position-relative">
+    <main>
+        <!-- Services Hero Section (Unique Design without icons) -->
+        <section class="services-hero position-relative d-flex align-items-center justify-content-center text-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/services_hero_banner_1780554189671.png'); background-size: cover; background-position: center; min-height: 50vh;">
+            <div class="container position-relative z-1 py-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <span class="badge bg-primary text-white px-3 py-2 rounded-pill mb-3">Our Collection</span>
-                        <h1 class="display-3 fw-bold mb-3">Our Inflatable Fleet</h1>
-                        <p class="lead mb-0 text-white-50">From birthday basics to massive event showstoppers. Explore our range of safe, sanitized, and fun rentals.</p>
+                    <div class="col-lg-8 py-5">
+                        <span class="badge bg-primary text-white px-4 py-2 rounded-pill mb-4 fs-6 text-uppercase tracking-wider">Premium Fleet</span>
+                        <h1 class="display-3 fw-bold mb-4">Explore Our Rentals</h1>
+                        <p class="lead mb-0 text-white">From classic birthday bouncers to massive event showstoppers. We have the perfect inflatable for your next gathering.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Grid -->
-        <section class="section-padding">
+        <!-- Category 1: Classic Bounce Houses -->
+        <section class="section-padding bg-white border-bottom">
             <div class="container">
-                <div class="row g-4">
-                    <!-- Service 1 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1533749047139-189de3cf06d3?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Tropical Castle">
-                                <span class="position-absolute top-0 end-0 m-3 badge bg-primary">Best Seller</span>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="images/services_classic_bouncer_1780554204186.png" alt="Classic Bounce House" class="img-fluid rounded-4 shadow-lg w-100" style="height: 500px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="text-primary fw-bold text-uppercase mb-2">Category 01</div>
+                        <h2 class="display-5 fw-bold mb-4">Classic Bounce Houses</h2>
+                        <p class="text-muted lead mb-5">The foundation of every great party. Our classic bouncers feature massive jumping areas, basketball hoops, and mesh windows for 360-degree parental visibility.</p>
+                        
+                        <div class="d-flex border-bottom pb-4 mb-4">
+                            <div class="me-4 text-center">
+                                <span class="d-block display-6 fw-normal text-dark">13x13</span>
+                                <span class="text-muted small text-uppercase">Footprint</span>
                             </div>
-                            <div class="card-body">
-                                <h5 class="fw-bold">Tropical Castle</h5>
-                                <p class="text-muted small">13ft x 13ft standard bounce house with palm tree accents.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto">
-                                    <span class="fw-bold text-primary">$150/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Tropical Castle</h4>
+                                <p class="text-muted mb-2">Perfect for standard backyards. Features vibrant palm tree pillars.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $150</span>
                             </div>
                         </div>
-                    </div>
-                    <!-- Service 2 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Blue Wave Slide">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Blue Wave Slide</h5>
-                                <p class="text-muted small">18ft tall water slide with deep pool landing. Perfect for summer.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                                    <span class="fw-bold text-primary">$250/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
+
+                        <div class="d-flex">
+                            <div class="me-4 text-center">
+                                <span class="d-block display-6 fw-normal text-dark">15x15</span>
+                                <span class="text-muted small text-uppercase">Footprint</span>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Service 3 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Ninja Course">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Ninja Course</h5>
-                                <p class="text-muted small">40ft obstacle course with tunnels, walls, and slides.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                                    <span class="fw-bold text-primary">$350/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 4 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <img src="https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Rainbow Combo">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Rainbow Combo</h5>
-                                <p class="text-muted small">Bounce house + slide + hoop. The ultimate 3-in-1 unit.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                                    <span class="fw-bold text-primary">$200/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 5 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <img src="https://images.unsplash.com/photo-1594911772125-07fc7a2d8d9f?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Toddler Playzone">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Toddler Playzone</h5>
-                                <p class="text-muted small">Safe and soft enclosure for children under 5 years old.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                                    <span class="fw-bold text-primary">$120/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 6 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Giant Connect 4">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Giant Connect 4</h5>
-                                <p class="text-muted small">Massive inflatable version of the classic strategy game.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                                    <span class="fw-bold text-primary">$75/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 7 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <img src="https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Bumper Cars">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Bumper Cars</h5>
-                                <p class="text-muted small">Inflatable arena with 4 battery-powered bumper cars.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                                    <span class="fw-bold text-primary">$400/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 8 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card service-card shadow-sm border-0">
-                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=600" class="service-card-img" alt="Dino World">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Dino World</h5>
-                                <p class="text-muted small">Prehistoric themed bounce house with realistic dino prints.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                                    <span class="fw-bold text-primary">$175/Day</span>
-                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary px-3">Details</a>
-                                </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Rainbow Pavilion</h4>
+                                <p class="text-muted mb-2">Oversized jumping area ideal for larger parties and energetic kids.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $175</span>
                             </div>
                         </div>
                     </div>
@@ -212,12 +128,132 @@
             </div>
         </section>
 
-        <!-- CTA -->
-        <section class="section-padding bg-light-subtle">
-            <div class="container text-center">
-                <h2 class="fw-bold mb-4">Need Something Custom?</h2>
-                <p class="mb-5">We provide customized packages for large events, schools, and corporate gatherings.</p>
-                <a href="contact.html" class="btn btn-primary btn-lg px-5">Get a Custom Quote</a>
+        <!-- Category 2: Water Slides -->
+        <section class="section-padding bg-body-tertiary border-bottom">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1 pe-lg-5">
+                        <div class="text-primary fw-bold text-uppercase mb-2">Category 02</div>
+                        <h2 class="display-5 fw-bold mb-4">Extreme Water Slides</h2>
+                        <p class="text-muted lead mb-5">Beat the summer heat! Our water slides feature steep drops, slip-and-slide attachments, and deep splash pools for the ultimate cool-down experience.</p>
+                        
+                        <div class="d-flex border-bottom pb-4 mb-4">
+                            <div class="me-4 text-center">
+                                <span class="d-block display-6 fw-normal text-dark">18ft</span>
+                                <span class="text-muted small text-uppercase">Height</span>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Blue Wave Plunge</h4>
+                                <p class="text-muted mb-2">A steep single-lane slide ending in a refreshing 2-foot deep pool.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $250</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="me-4 text-center">
+                                <span class="d-block display-6 fw-normal text-dark">22ft</span>
+                                <span class="text-muted small text-uppercase">Height</span>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Dual-Lane Hurricane</h4>
+                                <p class="text-muted mb-2">Race your friends side-by-side down this massive dual-lane slide.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img src="images/services_water_slide_1780554218432.png" alt="Water Slide" class="img-fluid rounded-4 shadow-lg w-100" style="height: 500px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 3: Interactive & Combos -->
+        <section class="section-padding bg-white">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="images/services_combo_unit_1780554229964.png" alt="Combo Units" class="img-fluid rounded-4 shadow-lg w-100" style="height: 500px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="text-primary fw-bold text-uppercase mb-2">Category 03</div>
+                        <h2 class="display-5 fw-bold mb-4">Combos & Obstacles</h2>
+                        <p class="text-muted lead mb-5">Why choose just one? Combo units combine bouncing, climbing, and sliding. For bigger crowds, our obstacle courses provide competitive fun.</p>
+                        
+                        <div class="d-flex border-bottom pb-4 mb-4">
+                            <div class="me-4 text-center" style="min-width: 110px;">
+                                <span class="d-block display-6 fw-normal text-dark text-nowrap">4-in-1</span>
+                                <span class="text-muted small text-uppercase">Features</span>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Mega Rainbow Combo</h4>
+                                <p class="text-muted mb-2">Bounce area, climbing wall, slide, and interior basketball hoop.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $225</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="me-4 text-center" style="min-width: 110px;">
+                                <span class="d-block display-6 fw-normal text-dark text-nowrap">40ft</span>
+                                <span class="text-muted small text-uppercase">Length</span>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Adrenaline Rush Obstacle</h4>
+                                <p class="text-muted mb-2">Crawl tubes, pop-ups, log jams, and a giant slide finish.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 4: Toddler Soft Play Zones -->
+        <section class="section-padding bg-body-tertiary border-top">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1 pe-lg-5">
+                        <div class="text-primary fw-bold text-uppercase mb-2">Category 04</div>
+                        <h2 class="display-5 fw-bold mb-4">Toddler Soft Play Zones</h2>
+                        <p class="text-muted lead mb-5">Keep the little ones safe and entertained! Our fully enclosed soft play zones are perfect for ages 1-5, featuring soft foam blocks, ball pits, and padded floors.</p>
+                        
+                        <div class="d-flex border-bottom pb-4 mb-4">
+                            <div class="me-4 text-center">
+                                <span class="d-block display-6 fw-normal text-dark">5 & Under</span>
+                                <span class="text-muted small text-uppercase">Age Limit</span>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Deluxe Toddler Zone</h4>
+                                <p class="text-muted mb-2">Includes fencing, floor mats, animal hoppers, mini ball pit, and soft climbing blocks.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $150</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="me-4 text-center" style="min-width: 110px;">
+                                <span class="d-block display-6 fw-normal text-dark text-nowrap">10x10</span>
+                                <span class="text-muted small text-uppercase">Footprint</span>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Mini Play Enclosure</h4>
+                                <p class="text-muted mb-2">Perfect for indoor setups or small patios. Compact but full of fun activities.</p>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Starting at $100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img src="images/services_toddler_zone_1780555023934.png" alt="Toddler Soft Play" class="img-fluid rounded-4 shadow-lg w-100" style="height: 500px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding bg-dark text-white text-center">
+            <div class="container py-5">
+                <h2 class="fw-bold display-5 mb-4">Don't See What You Need?</h2>
+                <p class="lead text-white-50 mx-auto mb-5" style="max-width: 700px;">We have a rotating inventory of over 50 unique inflatables and party games. Contact our team to find the perfect fit for your specific theme and space requirements.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold">Request Full Catalog</a>
             </div>
         </section>
     </main>
