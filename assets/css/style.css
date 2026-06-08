@@ -1107,6 +1107,23 @@ footer .form-control:focus {
     text-align: right;
 }
 
+/* Home 1 — Safety Guidelines RTL Fix */
+[dir="rtl"] .safety-guidelines-list li {
+    text-align: right;
+}
+
+@media (min-width: 992px) {
+    [dir="rtl"] .safety-guidelines-col {
+        text-align: right !important;
+    }
+    [dir="rtl"] .safety-guidelines-list li {
+        align-items: flex-start !important;
+    }
+    [dir="rtl"] .safety-guidelines-list li > div {
+        text-align: right;
+    }
+}
+
 [dir="rtl"] .ms-auto {
     margin-right: auto !important;
     margin-left: 0 !important;
