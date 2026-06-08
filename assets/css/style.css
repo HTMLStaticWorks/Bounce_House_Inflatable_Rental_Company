@@ -1240,3 +1240,9 @@ footer .form-control:focus {
 .service-card .mt-auto-custom {
     margin-top: auto;
 }
+
+/* Offcanvas Menu Fixes */
+[dir="rtl"] .offcanvas-header .btn-close {
+    margin-right: auto !important;
+    margin-left: calc(-.5 * var(--bs-offcanvas-padding-x)) !important;
+}
